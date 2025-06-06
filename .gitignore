@@ -3,3 +3,8 @@
 
 # Node modules
 /node_modules/
+
+# Tutorial de uso de componentes
+/app/componentes/Tutorial
+
+#No borrar
