@@ -4,7 +4,7 @@ import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Image } from "react-native";
 import Ventana1 from "../components/Sobre_nosotros";
-import Ventana2 from "../components/Productos";
+import PantallaMenu from "../navigation/MenuProductos";
 import Ventana3 from "../components/Hazlo_por_ti";
 import Ventana5 from "../components/Futuros_proyectos";
 import Ventana6 from "../components/Contactanos";
@@ -31,7 +31,7 @@ export default function DrawerMenu() {
       }}
     >
       <Drawer.Screen name="Sobre Nosotros" component={Ventana1} />
-      <Drawer.Screen name="Producto" component={Ventana2} />
+      <Drawer.Screen name="Producto" component={PantallaMenu} />
       <Drawer.Screen name="Hazlo por ti" component={Ventana3} />
       <Drawer.Screen name="Futuros Proyectos" component={Ventana5} />
       <Drawer.Screen name="Contáctanos" component={Ventana6} />

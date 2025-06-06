@@ -4,12 +4,32 @@ import {
   StyleSheet,
   Text,
   View,
-  ScrollView,
+  Linking,
   Image,
 } from "react-native";
 
 class Ventana6 extends Component {
   render() {
+    const openWhatsApp = () => {
+      const phoneNumber = "+524426099279"; // Usar el número con código de país
+      const message =
+        "Hola, quiero más información sobre como ser parte de EcoTech";
+      const urlw = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+        message
+      )}`;
+      Linking.openURL(urlw);
+    };
+    const sendEmail = () => {
+      const email = "vazquez.cuellar.carlos.45@cbtis118.edu.mx";
+      const subject = "Consulta";
+      const body =
+        "Hola, me gustaría obtener más información sobre como ser parte de EcoTech";
+      const urlg = `mailto:${email}?subject=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(body)}`;
+      Linking.openURL(urlg);
+    };
+
     return (
       <SafeAreaView style={styles.safe}>
         <View style={styles.container}>
@@ -26,14 +46,16 @@ class Ventana6 extends Component {
               style={styles.iconow}
               source={require("../../assets/icon-llamada-whatsapp-psd-editable.png")}
             />
-            <Text style={styles.texticonw}>442 609 9279</Text>
+            <Text onPress={openWhatsApp} style={styles.texticonw}>
+              442 609 9279
+            </Text>
           </View>
           <View style={styles.contenedor}>
             <Image
               style={styles.iconog}
               source={require("../../assets/icono-gmail.png")}
             />
-            <Text style={styles.texticong}>
+            <Text onPress={sendEmail} style={styles.texticong}>
               vazquez.cuellar.carlos.45{"\n"}@cbtis118.edu.mx
             </Text>
           </View>
