@@ -5,9 +5,9 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Image } from "react-native";
 import Ventana1 from "../components/Sobre_nosotros";
 import PantallaMenu from "../navigation/MenuProductos";
-import Ventana3 from "../components/Hazlo_por_ti";
-import Ventana5 from "../components/Futuros_proyectos";
+import Hazlo_por_ti_Screen from "../components/Hazlo_por_ti";
 import Ventana6 from "../components/Contactanos";
+import PantallaMenuFuturos from "../navigation/MenuFuturos_proyectos";
 
 const Drawer = createDrawerNavigator();
 
@@ -31,9 +31,9 @@ export default function DrawerMenu() {
       }}
     >
       <Drawer.Screen name="Sobre Nosotros" component={Ventana1} />
-      <Drawer.Screen name="Producto" component={PantallaMenu} />
-      <Drawer.Screen name="Hazlo por ti" component={Ventana3} />
-      <Drawer.Screen name="Futuros Proyectos" component={Ventana5} />
+      <Drawer.Screen name="Productos" component={PantallaMenu} />
+      <Drawer.Screen name="Hazlo por ti" component={Hazlo_por_ti_Screen} />
+      <Drawer.Screen name="Futuros Proyectos" component={PantallaMenuFuturos} />
       <Drawer.Screen name="Contáctanos" component={Ventana6} />
     </Drawer.Navigator>
   );

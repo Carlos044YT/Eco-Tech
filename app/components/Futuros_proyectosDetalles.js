@@ -1,13 +1,13 @@
 import { View, Text, Image, StyleSheet } from "react-native";
 
 export default function DetalleFuturoProductoScreen({ route }) {
-  const { producto } = route.params;
+  const { productos_futuro } = route.params;
 
   return (
     <View style={styles.container}>
-      <Image source={producto.imagen} style={styles.imagen} />
-      <Text style={styles.nombre}>{producto.nombre}</Text>
-      <Text style={styles.descripcion}>{producto.descripcion}</Text>
+      <Image source={productos_futuro.imagen} style={styles.imagen} />
+      <Text style={styles.nombre}>{productos_futuro.nombre}</Text>
+      <Text style={styles.descripcion}>{productos_futuro.descripcion}</Text>
     </View>
   );
 }

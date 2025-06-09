@@ -5,15 +5,15 @@ import { useNavigation } from "@react-navigation/native";
 const productos = [
   {
     id: "1",
-    nombre: "Botella reciclada",
-    imagen: require("../../assets/botella.jpg"),
-    descripcion: "Botella hecha con PET 100% reciclado.",
+    nombre: "Lapicero",
+    imagen: require("../../assets/Repo.jpeg"),
+    descripcion: "Hecho con envases de plastico",
   },
   {
     id: "2",
-    nombre: "Maceta ecológica",
-    imagen: require("../../assets/maceta.jpg"),
-    descripcion: "Maceta biodegradable y sostenible.",
+    nombre: "Joyero",
+    imagen: require("../../assets/Joyero.jpeg"),
+    descripcion: "Hecho con contenedores de plastico",
   },
   // Agrega más productos según necesites
 ];
