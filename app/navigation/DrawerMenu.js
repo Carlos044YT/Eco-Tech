@@ -12,10 +12,15 @@ import LoginScreen from "../components/Login";
 import Carrito from "../components/Carrito";
 import CustomDrawerContent from "./CustomDrawerBD";
 import Icon from "react-native-vector-icons/MaterialIcons";
+import { useAuth } from "../context/AuthContext";
+import AdminPedidos from "../components/AdminPedidos";
+import PerfilUsuario from "../components/PerfilUsuario";
 
 const Drawer = createDrawerNavigator();
 
 export default function DrawerMenu() {
+  const { usuario } = useAuth();
+
   return (
     <Drawer.Navigator
       drawerContent={(props) => <CustomDrawerContent {...props} />}
@@ -108,6 +113,29 @@ export default function DrawerMenu() {
           drawerItemStyle: { height: 0 },
         }}
       />
+      {usuario && usuario.rol === "admin" && (
+        <Drawer.Screen
+          name="Pedidos (Admin)"
+          component={AdminPedidos}
+          options={{
+            drawerIcon: ({ color, size }) => (
+              <Icon name="admin-panel-settings" size={size} color={color} />
+            ),
+          }}
+        />
+      )}
+
+      {usuario && (
+        <Drawer.Screen
+          name="Mi Perfil"
+          component={PerfilUsuario}
+          options={{
+            drawerIcon: ({ color, size }) => (
+              <Icon name="person" size={size} color={color} />
+            ),
+          }}
+        />
+      )}
     </Drawer.Navigator>
   );
 }
