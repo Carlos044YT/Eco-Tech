@@ -40,19 +40,20 @@ export default function Futuros_proyectos_Screen() {
       ListHeaderComponent={
         <View style={styles.contenido}>
           <Text style={styles.text}>
-            La sección Próximos Proyectos es un espacio donde compartimos de
+            La sección Futuros Proyectos es un espacio donde compartimos de
             manera anticipada los desarrollos que están por realizarse. Estos
             proyectos pueden surgir tanto de nuestras propias iniciativas como
-            de sugerencias valiosas de la comunidad. Cada propuesta que aparece
-            en esta sección ya ha sido confirmada y programada para su
-            desarrollo, lo que significa que no es una simple idea o
-            posibilidad: es un compromiso real. Aquí podrás conocer de primera
-            mano los productos o servicios que están en camino, tener una visión
-            anticipada de lo que viene y, en muchos casos, incluso involucrarte
-            aportando ideas o mejoras antes del lanzamiento. Con Próximos
-            Proyectos, buscamos mantener una comunicación abierta, fomentar la
-            participación activa de nuestra comunidad y asegurar que cada paso
-            que damos tenga un propósito claro y compartido.
+            de sugerencias valiosas de la comunidad. {"\n"}
+            {"\n"}Cada propuesta que aparece en esta sección ya ha sido
+            confirmada y programada para su desarrollo, lo que significa que no
+            es una simple idea o posibilidad es un compromiso real.{"\n"}
+            {"\n"}Aquí podrás conocer de primera mano los productos o servicios
+            que están en camino, tener una visión anticipada de lo que viene y,
+            en muchos casos, incluso involucrarte aportando ideas o mejoras
+            antes del lanzamiento. Con Futuros Proyectos, buscamos mantener una
+            comunicación abierta, fomentar la participación activa de nuestra
+            comunidad y asegurar que cada paso que damos tenga un propósito
+            claro y compartido.{"\n"}
           </Text>
         </View>
       }

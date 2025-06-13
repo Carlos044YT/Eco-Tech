@@ -14,13 +14,13 @@ const productos_Tuto = [
     id: "1",
     nombre: "Lapicero",
     imagen: require("../../assets/Repo.jpeg"),
-    url: "https://youtu.be/bbpOUH788oc?si=wq187-I0TDAs-FMx",
+    url: "https://youtu.be/Pdx_QfVdlJQ",
   },
   {
     id: "2",
     nombre: "Joyero",
     imagen: require("../../assets/Joyero.jpeg"),
-    url: "https://youtu.be/ezrCib-spw8?si=pMCMsm90CGIepBMf",
+    url: "https://youtu.be/SmenaZwcV10",
   },
   // Agrega más productos según necesites
 ];
